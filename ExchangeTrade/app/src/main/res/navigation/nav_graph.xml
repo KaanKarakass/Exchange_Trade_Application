@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/exchangeFragment">
+
+    <fragment
+        android:id="@+id/exchangeFragment"
+        android:name="com.kaankarakas.exchangetrade.ExchangeFragment"
+        android:label="fragment_exchange"
+        tools:layout="@layout/fragment_exchange" >
+        <action
+            android:id="@+id/action_exchangeFragment_to_resultFragment"
+            app:destination="@+id/resultFragment"
+            app:popUpTo="@id/exchangeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.kaankarakas.exchangetrade.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="result"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_resultFragment_to_exchangeFragment"
+            app:destination="@id/exchangeFragment" />
+    </fragment>
+</navigation>

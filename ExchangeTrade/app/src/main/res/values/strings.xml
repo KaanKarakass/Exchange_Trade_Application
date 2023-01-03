@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Exchange Trade</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="usd_try">USD/TRY</string>
+    <string name="usd_value">usd-value</string>
+    <string name="eur_try">EUR/TRY</string>
+    <string name="eur_value">eur-value</string>
+    <string name="amount">Amount:</string>
+    <string name="_100">100</string>
+    <string name="buy_usd_try">Buy USD/TRY</string>
+    <string name="buy_eur_try">BUY EUR/TRY</string>
+    <string name="back">BACK</string>
+</resources>
